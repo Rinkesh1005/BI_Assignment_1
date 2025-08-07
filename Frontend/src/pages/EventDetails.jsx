@@ -6,7 +6,7 @@ const EventDetails = () => {
   const { eventId } = useParams();
   
   const { data, loading, error } = useFetch(
-    `https://bi-assignment-1-indol.vercel.app/events/${eventId}`
+    `https://bi-assignment-1-hj14.vercel.app//events/${eventId}`
   );
 
   if (loading) return <p>Loading event details...</p>;

@@ -4,7 +4,7 @@ import useFetch from "../useFetch";
 
 const ListingPage = ({searchQuery}) => {
   const [eventType, setEventType] = useState("Both");
-  const { data, loading, error } = useFetch("https://bi-assignment-1-indol.vercel.app/events");
+  const { data, loading, error } = useFetch("https://bi-assignment-1-hj14.vercel.app//events");
 
   const events = data && data.length > 0 ? data : [];
 
