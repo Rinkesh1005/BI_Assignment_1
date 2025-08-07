@@ -4,7 +4,7 @@ const cors = require("cors");
 const { initialiseDatabase } = require("./db/db.connect");
 const Events = require("./models/event.models");
 const corsOrigin = {
-  origin: "*"
+  origin: "*",
 };
 app.use(express.json());
 app.use(cors(corsOrigin));
@@ -80,7 +80,7 @@ app.get("/events/:id", async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
